@@ -3,18 +3,30 @@ package net.cozystudios.froglightsreimagined.item;
 import net.cozystudios.froglightsreimagined.FroglightsReimaginedCore;
 import net.cozystudios.froglightsreimagined.block.ModBlocks;
 import net.cozystudios.froglightsreimagined.util.FroglightsId;
+//? if fabric {
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.registry.Registry;
+//?} else if neoforge {
+/*import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.registries.DeferredRegister;
+*///?}
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 
 public class ModItemGroups {
 
+    //? if neoforge {
+    /*public static final DeferredRegister<ItemGroup> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.ITEM_GROUP, FroglightsReimaginedCore.MOD_ID);
+
+    public static final DeferredHolder<ItemGroup, ItemGroup> CORE_GROUP = CREATIVE_MODE_TABS.register("core", () ->
+            ItemGroup.builder().displayName(Text.translatable("itemgroup.core"))
+    *///?} else {
     public static final ItemGroup CORE_GROUP = Registry.register(Registries.ITEM_GROUP,
             FroglightsId.of("core"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.core"))
+    //?}
                     .icon(() -> new ItemStack(ModBlocks.RED_FROGLIGHT)).entries((displayContext, entries) -> {
 
                         entries.add(ModBlocks.RED_FROGLIGHT);
