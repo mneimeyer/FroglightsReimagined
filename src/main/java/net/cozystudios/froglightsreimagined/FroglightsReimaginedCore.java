@@ -31,6 +31,8 @@ public class FroglightsReimaginedCore {
 	}
 	//?} else if neoforge {
 	/*public FroglightsReimaginedCore(IEventBus modEventBus) {
+        ModBlocks.BLOCKS.register(modEventBus);
+        ModBlocks.ITEMS.register(modEventBus);
         ModBlocks.registerModBlocks();
         ModItemGroups.CREATIVE_MODE_TABS.register(modEventBus);
         ModItemGroups.registerItemGroups();
