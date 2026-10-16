@@ -110,9 +110,11 @@ public class ModBlocks {
 
     private static Supplier<Block> registerFroglightLamp(String name) {
         //? if neoforge {
-        /*return BLOCKS.<Block>registerBlock(name, props -> new FroglightLampBlock(AbstractBlock.Settings.copy(Blocks.LANTERN)
+        /*var block = BLOCKS.<Block>registerBlock(name, props -> new FroglightLampBlock(AbstractBlock.Settings.copy(Blocks.LANTERN)
                 .luminance(state -> state.get(FroglightLampBlock.LIT) ? 15 : 0)
                 .requiresTool()));
+        ITEMS.registerSimpleBlockItem(block);
+        return block;
         *///?} elif >=1.21.4 {
         /*Identifier id = FroglightsId.of(name);
         RegistryKey<Block> key = RegistryKey.of(RegistryKeys.BLOCK, id);
@@ -142,8 +144,10 @@ public class ModBlocks {
 
     private static Supplier<Block> registerFroglightLantern(String name) {
         //? if neoforge {
-        /*return BLOCKS.<Block>registerBlock(name, props -> new LanternBlock(AbstractBlock.Settings.copy(Blocks.LANTERN)
+        /*var block = BLOCKS.<Block>registerBlock(name, props -> new LanternBlock(AbstractBlock.Settings.copy(Blocks.LANTERN)
                 .requiresTool()));
+        ITEMS.registerSimpleBlockItem(block);
+        return block;
         *///?} elif >=1.21.4 {
         /*Identifier id = FroglightsId.of(name);
         RegistryKey<Block> key = RegistryKey.of(RegistryKeys.BLOCK, id);
@@ -170,9 +174,11 @@ public class ModBlocks {
 
     private static Supplier<Block> registerFroglight(String name) {
         //? if neoforge {
-        /*return BLOCKS.<Block>registerBlock(name, props -> new PillarBlock(AbstractBlock.Settings.copy(Blocks.OCHRE_FROGLIGHT)
+        /*var block = BLOCKS.<Block>registerBlock(name, props -> new PillarBlock(AbstractBlock.Settings.copy(Blocks.OCHRE_FROGLIGHT)
                 .luminance(state -> 15)
                 .requiresTool()));
+        ITEMS.registerSimpleBlockItem(block);
+        return block;
         *///?} elif >=1.21.4 {
         /*Identifier id = FroglightsId.of(name);
         RegistryKey<Block> key = RegistryKey.of(RegistryKeys.BLOCK, id);
