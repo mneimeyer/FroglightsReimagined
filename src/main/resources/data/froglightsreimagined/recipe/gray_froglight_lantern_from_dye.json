@@ -3,8 +3,12 @@
   "category": "building",
   "group": "froglight_lantern_recolor",
   "ingredients": [
-    "#froglightsreimagined:froglight_lanterns",
-    "minecraft:gray_dye"
+    {
+      "tag": "froglightsreimagined:froglight_lanterns"
+    },
+    {
+      "item": "minecraft:gray_dye"
+    }
   ],
   "result": {
     "id": "froglightsreimagined:gray_froglight_lantern",

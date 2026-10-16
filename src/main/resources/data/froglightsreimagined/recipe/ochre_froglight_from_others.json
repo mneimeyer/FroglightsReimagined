@@ -3,8 +3,12 @@
   "category": "building",
   "group": "froglight_recolor",
   "ingredients": [
-    "#froglightsreimagined:froglights",
-    "minecraft:glowstone_dust"
+    {
+      "tag": "froglightsreimagined:froglights"
+    },
+    {
+      "item": "minecraft:glowstone_dust"
+    }
   ],
   "result": {
     "id": "minecraft:ochre_froglight",

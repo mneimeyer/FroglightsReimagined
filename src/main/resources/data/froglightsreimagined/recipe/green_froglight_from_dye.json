@@ -3,8 +3,12 @@
   "category": "building",
   "group": "froglight_recolor",
   "ingredients": [
-    "#froglightsreimagined:froglights",
-    "minecraft:green_dye"
+    {
+      "tag": "froglightsreimagined:froglights"
+    },
+    {
+      "item": "minecraft:green_dye"
+    }
   ],
   "result": {
     "id": "froglightsreimagined:green_froglight",

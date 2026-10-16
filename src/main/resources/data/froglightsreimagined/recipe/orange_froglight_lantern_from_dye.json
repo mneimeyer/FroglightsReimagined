@@ -3,8 +3,12 @@
   "category": "building",
   "group": "froglight_lantern_recolor",
   "ingredients": [
-    "#froglightsreimagined:froglight_lanterns",
-    "minecraft:orange_dye"
+    {
+      "tag": "froglightsreimagined:froglight_lanterns"
+    },
+    {
+      "item": "minecraft:orange_dye"
+    }
   ],
   "result": {
     "id": "froglightsreimagined:orange_froglight_lantern",

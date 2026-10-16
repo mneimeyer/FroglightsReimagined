@@ -3,8 +3,15 @@
   "category": "building",
   "group": "froglight_floor_lamp_recolor",
   "ingredients": [
-    "#froglightsreimagined:froglight_floor_lamps",
-    "minecraft:white_dye"
+    {
+      "tag": "froglightsreimagined:froglight_floor_lamps"
+    },
+    {
+      "item": "minecraft:white_dye"
+    }
   ],
-  "result": { "id": "froglightsreimagined:white_froglight_floor_lamp", "count": 1 }
+  "result": {
+    "id": "froglightsreimagined:white_froglight_floor_lamp",
+    "count": 1
+  }
 }

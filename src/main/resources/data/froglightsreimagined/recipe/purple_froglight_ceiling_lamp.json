@@ -6,9 +6,18 @@
     " F "
   ],
   "key": {
-    "C": "minecraft:chain",
-    "W": "minecraft:purple_wool",
-    "F": "froglightsreimagined:purple_froglight"
+    "C": {
+      "item": "minecraft:chain"
+    },
+    "W": {
+      "item": "minecraft:purple_wool"
+    },
+    "F": {
+      "item": "froglightsreimagined:purple_froglight"
+    }
   },
-  "result": { "id": "froglightsreimagined:purple_froglight_ceiling_lamp", "count": 1 }
+  "result": {
+    "id": "froglightsreimagined:purple_froglight_ceiling_lamp",
+    "count": 1
+  }
 }

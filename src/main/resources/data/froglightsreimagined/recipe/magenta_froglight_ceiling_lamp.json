@@ -6,9 +6,18 @@
     " F "
   ],
   "key": {
-    "C": "minecraft:chain",
-    "W": "minecraft:magenta_wool",
-    "F": "froglightsreimagined:magenta_froglight"
+    "C": {
+      "item": "minecraft:chain"
+    },
+    "W": {
+      "item": "minecraft:magenta_wool"
+    },
+    "F": {
+      "item": "froglightsreimagined:magenta_froglight"
+    }
   },
-  "result": { "id": "froglightsreimagined:magenta_froglight_ceiling_lamp", "count": 1 }
+  "result": {
+    "id": "froglightsreimagined:magenta_froglight_ceiling_lamp",
+    "count": 1
+  }
 }

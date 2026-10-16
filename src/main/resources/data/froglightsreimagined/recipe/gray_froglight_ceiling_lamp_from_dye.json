@@ -3,8 +3,15 @@
   "category": "building",
   "group": "froglight_ceiling_lamp_recolor",
   "ingredients": [
-    "#froglightsreimagined:froglight_ceiling_lamps",
-    "minecraft:gray_dye"
+    {
+      "tag": "froglightsreimagined:froglight_ceiling_lamps"
+    },
+    {
+      "item": "minecraft:gray_dye"
+    }
   ],
-  "result": { "id": "froglightsreimagined:gray_froglight_ceiling_lamp", "count": 1 }
+  "result": {
+    "id": "froglightsreimagined:gray_froglight_ceiling_lamp",
+    "count": 1
+  }
 }

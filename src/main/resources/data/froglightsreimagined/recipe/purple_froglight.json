@@ -6,9 +6,15 @@
     "CPC"
   ],
   "key": {
-    "P": "minecraft:paper",
-    "#": "#minecraft:candles",
-    "C": "minecraft:purple_stained_glass_pane"
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "#": {
+      "tag": "minecraft:candles"
+    },
+    "C": {
+      "item": "minecraft:purple_stained_glass_pane"
+    }
   },
   "result": {
     "id": "froglightsreimagined:purple_froglight",

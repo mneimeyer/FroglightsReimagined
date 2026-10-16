@@ -3,8 +3,15 @@
   "category": "building",
   "group": "froglight_floor_lamp_recolor",
   "ingredients": [
-    "#froglightsreimagined:froglight_floor_lamps",
-    "minecraft:magenta_dye"
+    {
+      "tag": "froglightsreimagined:froglight_floor_lamps"
+    },
+    {
+      "item": "minecraft:magenta_dye"
+    }
   ],
-  "result": { "id": "froglightsreimagined:magenta_froglight_floor_lamp", "count": 1 }
+  "result": {
+    "id": "froglightsreimagined:magenta_froglight_floor_lamp",
+    "count": 1
+  }
 }

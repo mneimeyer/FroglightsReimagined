@@ -6,9 +6,18 @@
     " C "
   ],
   "key": {
-    "C": "minecraft:chain",
-    "W": "minecraft:green_wool",
-    "F": "froglightsreimagined:green_froglight"
+    "C": {
+      "item": "minecraft:chain"
+    },
+    "W": {
+      "item": "minecraft:green_wool"
+    },
+    "F": {
+      "item": "froglightsreimagined:green_froglight"
+    }
   },
-  "result": { "id": "froglightsreimagined:green_froglight_floor_lamp", "count": 1 }
+  "result": {
+    "id": "froglightsreimagined:green_froglight_floor_lamp",
+    "count": 1
+  }
 }
