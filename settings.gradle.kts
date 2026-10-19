@@ -25,6 +25,7 @@ stonecutter {
         }
         mc("1.20.1")
         mc("1.21.1")
+        version("1.21.1-neoforge", "1.21.1")
         mc("1.21.4")
         mc("1.21.11")
 
