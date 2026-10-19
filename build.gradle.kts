@@ -1,4 +1,5 @@
 import gg.meza.stonecraft.mod
+import java.util.Properties
 
 plugins {
     id("gg.meza.stonecraft")
@@ -44,22 +45,29 @@ tasks.processResources {
     }
 }
 
-// MattsModpack01 is the live AMP-managed server this mod targets. Never
-// overwrites or deletes the live, active jar in its mods folder - always
-// lands as a *.jar.disabled sibling that a human has to rename/enable
-// manually. Only wired up for the neoforge target, since that's the loader
-// MattsModpack01 runs.
+// Optional, per-contributor convenience: if local.properties (gitignored,
+// never committed) sets neoforgeDeployModsDir, every build copies the jar
+// there as a *.jar.disabled sibling - never overwrites or deletes whatever
+// jar is already active, a human has to rename it to enable. Absent that
+// property (the default for any fresh checkout), this does nothing.
 if (mod.isNeoforge) {
-    val serverModsDir = file("/mnt/amp/MattsModpack01/Minecraft/mods")
-
-    tasks.register<Copy>("deployToServer") {
-        dependsOn(tasks.named("remapJar"))
-        from(tasks.named("remapJar"))
-        into(serverModsDir)
-        rename { "$it.disabled" }
+    val localPropertiesFile = rootProject.file("local.properties")
+    val localProperties = Properties()
+    if (localPropertiesFile.exists()) {
+        localPropertiesFile.inputStream().use { stream -> localProperties.load(stream) }
     }
+    val deployModsDir = localProperties.getProperty("neoforgeDeployModsDir")
 
-    tasks.named("build") {
-        finalizedBy("deployToServer")
+    if (deployModsDir != null) {
+        tasks.register<Copy>("deployToServer") {
+            dependsOn(tasks.named("remapJar"))
+            from(tasks.named("remapJar"))
+            into(file(deployModsDir))
+            rename { "$it.disabled" }
+        }
+
+        tasks.named("build") {
+            finalizedBy("deployToServer")
+        }
     }
 }
