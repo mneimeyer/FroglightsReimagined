@@ -3,8 +3,15 @@
   "category": "building",
   "group": "froglight_floor_lamp_recolor",
   "ingredients": [
-    "#froglightsreimagined:froglight_floor_lamps",
-    "minecraft:lime_dye"
+    {
+      "tag": "froglightsreimagined:froglight_floor_lamps"
+    },
+    {
+      "item": "minecraft:lime_dye"
+    }
   ],
-  "result": { "id": "froglightsreimagined:lime_froglight_floor_lamp", "count": 1 }
+  "result": {
+    "id": "froglightsreimagined:lime_froglight_floor_lamp",
+    "count": 1
+  }
 }

@@ -3,8 +3,12 @@
   "category": "building",
   "group": "froglight_lantern_creation",
   "ingredients": [
-    "minecraft:lantern",
-    "froglightsreimagined:light_blue_froglight"
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "froglightsreimagined:light_blue_froglight"
+    }
   ],
   "result": {
     "id": "froglightsreimagined:light_blue_froglight_lantern",

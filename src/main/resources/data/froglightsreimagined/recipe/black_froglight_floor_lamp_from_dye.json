@@ -3,8 +3,15 @@
   "category": "building",
   "group": "froglight_floor_lamp_recolor",
   "ingredients": [
-    "#froglightsreimagined:froglight_floor_lamps",
-    "minecraft:black_dye"
+    {
+      "tag": "froglightsreimagined:froglight_floor_lamps"
+    },
+    {
+      "item": "minecraft:black_dye"
+    }
   ],
-  "result": { "id": "froglightsreimagined:black_froglight_floor_lamp", "count": 1 }
+  "result": {
+    "id": "froglightsreimagined:black_froglight_floor_lamp",
+    "count": 1
+  }
 }
